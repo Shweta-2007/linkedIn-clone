@@ -1,4 +1,4 @@
-LinkedIn Clone
+<H1>LinkedIn Clone</H1>
 A LinkedIn clone built with React, Firebase, and Styled Components.
 
 Overview
