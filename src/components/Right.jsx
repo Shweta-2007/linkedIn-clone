@@ -37,10 +37,7 @@ function RightSide() {
         </Recommendation>
       </FollowCard>
       <BannerCard>
-        <img
-          src="images/dream.jpg"
-          alt=""
-        />
+        <img src="images/dream.jpg" alt="" />
       </BannerCard>
     </Container>
   );

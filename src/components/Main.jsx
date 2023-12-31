@@ -3,28 +3,26 @@ import React, { useState } from "react";
 import PostModal from "./postModal";
 
 function Main(props) {
+  const [showModal, setShowModal] = useState("close");
 
-  const[showModal, setShowModal] = useState("close");
+  const handleClick = (e) => {
+    e.preventDefault();
+    if (e.target !== e.currentTarget) {
+      return;
+    }
 
-const handleClick = (e) => {
-e.preventDefault();
-if(e.target !== e.currentTarget) {
-  return;
-}
-
-switch(showModal){
-  case "open":
-  setShowModal("close");
-  break;
-  case "close":
-  setShowModal("open")
-  break;
-  default: setShowModal("close");
-  break;
-}
-
-}
-
+    switch (showModal) {
+      case "open":
+        setShowModal("close");
+        break;
+      case "close":
+        setShowModal("open");
+        break;
+      default:
+        setShowModal("close");
+        break;
+    }
+  };
 
   return (
     <Container>
@@ -105,7 +103,7 @@ switch(showModal){
           </SocialActions>
         </Article>
       </div>
-      <PostModal showModal={showModal} handleClick={handleClick}/>
+      <PostModal showModal={showModal} handleClick={handleClick} />
     </Container>
   );
 }

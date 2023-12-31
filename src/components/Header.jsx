@@ -209,16 +209,16 @@ const NavList = styled.li`
 `;
 
 const SignOut = styled.div`
-position: absolute;
-top: 45px;
-background: white;
-border-radius: 0 0 5px 5px;
-width: 100px;
-height: 40px;
-font-size: 16px;
-transition-duration: 167ms;
-text-align: center;
-display: none;
+  position: absolute;
+  top: 45px;
+  background: white;
+  border-radius: 0 0 5px 5px;
+  width: 100px;
+  height: 40px;
+  font-size: 16px;
+  transition-duration: 167ms;
+  text-align: center;
+  display: none;
 `;
 
 const User = styled(NavList)`
@@ -233,7 +233,7 @@ const User = styled(NavList)`
     align-items: center;
   }
 
-  &:hover{
+  &:hover {
     ${SignOut} {
       align-items: center;
       display: flex;
@@ -244,6 +244,5 @@ const User = styled(NavList)`
 const Work = styled(User)`
   border-left: 1px solid rgba(0, 0, 0, 0.08);
 `;
-
 
 export default Header;
